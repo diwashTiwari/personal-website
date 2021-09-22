@@ -1,0 +1,155 @@
+/* this is used to reset defaut styling */
+*{
+    margin: 0 ;
+    padding : 0 ;
+
+    /* this is used to get the exact width of an element margin and padding are incuded in the width of that partcular element */
+    box-sizing: border-box ; 
+
+
+    /* this is used to remove underline form achor tags */
+    text-decoration: none ;
+
+    /* font */
+    font-family: 'Exo 2', sans-serif;
+
+    /* border */
+    /* border: 1px solid green ; */
+
+}
+
+
+             /* Natigation bar with logo and some nav-links */
+
+.navbar{
+    /* border: 2px solid red ; */
+    background-image: url(images/man.png);
+    background-position: center ;
+    background-repeat: no-repeat;
+    height: 100vh ;
+    
+}
+
+.container{
+    display: flex ;
+    align-items: center ;
+    justify-content: space-between;
+    /* border-radius: 0px 0px 10px 10px ; */
+    background: rgb(0, 0, 0);
+    opacity: 85% ;
+    /* border: 1px solid green ; */
+    padding: 0% 8% 0% 8% ; 
+    box-shadow: 0px 1px 2px 2px rgb(255, 0, 0);
+}
+
+                          /* LOGO */
+
+.logo .logo-link{
+    font-size: 35px ;
+    padding: 20px ;
+}
+
+.logo > a{
+    padding: px ;
+    font-weight: bold ;
+    color: red ;
+    font-size: 30px ;
+
+}
+
+#color{
+    font-weight: bolder ;
+    color: red ;
+    /* font-size: 25px ; */
+}
+
+.nav{
+    padding: 10px ;
+    list-style-type: none ;
+    display: flex ;
+}
+
+.nav li > a {
+    display: flex;
+    /* align-items: center; */
+    text-align: center;
+    margin: 10px;
+    letter-spacing: 1px;;
+    font-size: 20px; 
+    color: white ;
+}
+
+
+.nav-links:hover{
+    color: rgb(94, 255, 0) ;
+    transition : 0.5s ;
+
+}
+
+.nav-links:after{
+    content: " ";
+    height: 2px ;
+    display: block;
+    width: 0;
+    transition: 0.5s;
+    background: red;
+    margin: auto;
+}
+
+.nav-links:hover::after{
+    width: 75%;
+}
+
+                 /* INTRO  */
+
+.intro{
+    padding: 10px;
+    color : white ;
+    /* border: 2px solid red; */
+    width: 450px;
+    height: 240px;
+    /* font-size: 35px; */
+    letter-spacing: 2px;
+    position: relative ;
+    left: 1050px ;
+    top: 100px ;
+}
+
+.intro p{
+    font-size: 20px;
+}
+
+.intro h1{
+    font-size: 60px;
+
+}
+
+.intro h5{
+    font-size: 35px;
+
+}
+
+.btn{
+    width: 125px;
+    height: 55px;
+    text-align: center ;
+    font-size: 23px;
+    padding: 10px;
+    margin: 15px 10px 10px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: white ;
+    transition: 0.5s;
+    background-image: url(images/btnn.jpg);
+    background-position: start ;
+
+}
+
+.btn:hover{
+    background-image: url(images/btnn.jpg);
+    background-position: center bottom ;
+    box-shadow: 0 0 1px 1px rgb(0, 255, 0);
+    transition: 0.5s ;
+    /* background: black; */
+    color:rgb(0, 255, 0) ;
+}
