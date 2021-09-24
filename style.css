@@ -14,34 +14,115 @@
 
 }
 
-.navbar{
-    /* position: fixed; */
-    width: 100% ;
-    padding : 30px 0 ;
-    font-family: "Ubuntu" , sans-serif;
+.sec-1{
+    width: 100%;;
+    height: 100vh ;
+    /* background-image: url(images/man.png); */
+    background-color: palevioletred;
+    background-position: center ;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.container{
+.navbar{
+    background-image: url(images/btnn.jpg);
+    opacity: 80%;
+    background-position: start;
+    background-repeat: no-repeat ;
+    background-size: cover ;
+    /* position: fixed; */
+    width: 100% ;
+    padding : 20px 0 ;
+    font-family: "Ubuntu" , sans-serif;
+    box-shadow: 0 1px 2px 2px white ;;
+}
+
+.nav-container{
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+
 }
 
 .navbar-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 5px;
+    font-size: 18px;
+    font-weight: bold ;
+
+}
+
+.logo > a {
+    color: white ;
+    font-size: 25px ;
 }
 
 .nav{
     display: flex;
-
 }
 
-body > nav > div > div > ul > li{
-    list-style: none;
+.nav > li {
+    list-style-type: none;
 }
 
 .nav-links{
-    margin-right: 15px;
+    margin: 10px;
+    color: white;
+}
+
+.nav-links:hover{
+    color: rgb(0, 255, 0) ;
+    transition: 0.5s;
+}
+
+.hero{
+    width: 100%;
+}
+
+.hero .hero-container{
+    max-width: 1300px;
+    margin: auto;
+    height: 100vh ;
+    display: flex ;
+    justify-content: space-between;
+    padding-left: 180px;
+}
+
+.hero-content{
+    color: white ;
+    font-size: 30px ;
+    display: flex;
+    flex-direction: column ;
+    justify-content: center;
+    
+
+}
+
+.hero-image{
+   
+}
+
+.hero-btn{
+    margin: 10px 10px 10px 0;
+    width: 110px;
+    height: 50px ;
+    background-image: url(images/btnn.jpg);
+    color: white;
+    font-size: 18px;
+    border-radius: 5px ;
+}
+
+                                                            /*  KEYFRAMES  */
+
+.animate{
+    animation: web 2s linear 1s infinite ;
+    font-size: 20px;
+}
+
+@keyframes web {
+
+    1%{}
+    
 }
