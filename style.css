@@ -1,128 +1,146 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
 
 /* this is used to reset defaut styling */
 *{
     margin: 0 ;
-    padding : 0 ;
+    padding: 0 ;
 
-    /* this is used to get the exact width of an element margin and padding are incuded in the width of that partcular element */
-    box-sizing: border-box ; 
+    /* background: black; */
 
+    box-sizing: border-box;
 
-    /* this is used to remove underline form achor tags */
-    text-decoration: none ;
-
+    /* border: 1px solid red */
 }
 
-.sec-1{
-    width: 100%;;
-    height: 100vh ;
-    /* background-image: url(images/man.png); */
-    background-color: palevioletred;
-    background-position: center ;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.navbar{
-    background-image: url(images/btnn.jpg);
-    opacity: 80%;
-    background-position: start;
-    background-repeat: no-repeat ;
-    background-size: cover ;
-    /* position: fixed; */
-    width: 100% ;
-    padding : 20px 0 ;
-    font-family: "Ubuntu" , sans-serif;
-    box-shadow: 0 1px 2px 2px white ;;
-}
-
-.nav-container{
+                           /* Container of all sections which acts as default for all class naming container */
+.container{
     max-width: 1300px;
-    padding: 0 80px;
     margin: auto;
-
+    padding: 0 80px;
 }
 
+
+                                           /* NAVBAR Styling */
+.navbar{
+    width: 100%;
+    padding: 15px 0;
+    z-index: 999999 ;
+    /* background: rgb(0, 0, 0); */
+    position: fixed ;
+    font-family: "Ubuntu" , sans-serif;
+    transition: 0.6s;
+    /* box-shadow: 0 1px 2px 2px crimson; */
+}
 .navbar-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 5px;
-    font-size: 18px;
-    font-weight: bold ;
-
 }
-
-.logo > a {
-    color: white ;
-    font-size: 25px ;
+.logo a{
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 600 ;
 }
-
+.logo a:hover{
+    transition: all 0.5s ease;
+    color: crimson;
+    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+}
 .nav{
     display: flex;
 }
-
-.nav > li {
+.nav li {
     list-style-type: none;
+    margin: 0 15px;
 }
-
-.nav-links{
-    margin: 10px;
+.nav li > a{
+    text-decoration: none;
+    /* background: crimson; */
     color: white;
-}
-
-.nav-links:hover{
-    color: rgb(0, 255, 0) ;
-    transition: 0.5s;
-}
-
-.hero{
-    width: 100%;
-}
-
-.hero .hero-container{
-    max-width: 1300px;
-    margin: auto;
-    height: 100vh ;
-    display: flex ;
-    justify-content: space-between;
-    padding-left: 180px;
-}
-
-.hero-content{
-    color: white ;
-    font-size: 30px ;
-    display: flex;
-    flex-direction: column ;
-    justify-content: center;
-    
-
-}
-
-.hero-image{
-   
-}
-
-.hero-btn{
-    margin: 10px 10px 10px 0;
-    width: 110px;
-    height: 50px ;
-    background-image: url(images/btnn.jpg);
-    color: white;
-    font-size: 18px;
-    border-radius: 5px ;
-}
-
-                                                            /*  KEYFRAMES  */
-
-.animate{
-    animation: web 2s linear 1s infinite ;
     font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.nav li > a:hover{
+    color: crimson;
+    transition: all 0.5s;
+    font-size: 21px;
+
+}
+.nav li > a::after{
+    content: "";
+    width: 0% ;
+    display: block;
+    height: 2px;
+    background: crimson;
+    transition: all 0.5s;
+    margin: auto;
+}
+.nav li > a:hover::after{
+    width: 50%;
 }
 
-@keyframes web {
+.nav #color{
+    color: crimson;
+}
 
-    1%{}
-    
+                   /* HOME OF THE WEBSITE */
+.home{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    min-height: 600px;
+    background: url(images/tryy.jpg) no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Ubuntu" , sans-serif;
+}
+.home .container{
+    width: 100%;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+}
+.home .container .home-content{
+    color: white ;
+}
+.home .container .home-content > .text-1{
+    font-size: 35px;
+    font-weight: 300;
+}
+.home .container .home-content > .text-2{
+    font-size: 80px;
+    font-weight: 700;
+    color: crimson;
+    text-shadow: 3px 3px 4px rgb(0, 0, 0) ;
+}
+.home .container .home-content > .text-3{
+    font-size: 40px;
+    font-weight: 400;
+}
+
+                  /* button Styling */
+.btnn{
+    font-size: 25px;
+    width: 50px ;
+    height: 25px ;
+    text-decoration: none;
+    color: white;
+    margin: 90px ;
+    border: 4px solid red;
+}
+.btnn:hover{
+    background: crimson;
+    color: white;
+
+}
+
+/* illustation images styling */
+.home .container .illustrate-img > img{
+    /* border: 5px solid red; */
+    width: 600px;
+    height: 500px;
 }
