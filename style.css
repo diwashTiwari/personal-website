@@ -47,7 +47,7 @@
 .logo a:hover{
     transition: all 0.5s ease;
     color: crimson;
-    text-shadow: 1px 1px 3px rgb(255, 255, 255);
+    text-shadow: 1px 1px 3px rgb(0, 0, 0);
 }
 .nav{
     display: flex;
@@ -120,7 +120,27 @@
 .home .container .home-content > .text-3{
     font-size: 40px;
     font-weight: 400;
-    margin-bottom: 23px;
+    margin-bottom: 25px;
+}
+
+/* @keyframes added in text 3 for typing animation */
+
+@-webkit-keyframes typing { from { width: 0 ; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent ;} }
+
+.animate{
+    color: crimson ;
+    font-size: 42px ;
+    width: 16.5em;
+    border-right: .1em solid crimson ;
+    width: 21ch ;
+    /* margin: 2em 1em; */
+    white-space: nowrap;
+    overflow: hidden ;
+    -webkit-animation: typing 7s steps(13, end),
+     blink-caret .5s step-end infinite alternate; 
+     font-weight: 500;
+     text-shadow: 1px 1px 4px rgb(0, 0, 0);
 }
 
                   /* button Styling */
@@ -132,9 +152,8 @@
     color: crimson;
     border: 2px solid crimson;
     border-radius: 5px;
-    padding: 5px 8px;
+    padding: 8px 10px;
     transition: all 0.5s ease;
-
 }
 .btnn:hover{
     background: crimson;
