@@ -67,7 +67,7 @@
 .nav li > a:hover{
     color: crimson;
     transition: all 0.5s;
-    font-size: 21px;
+
 
 }
 .nav li > a::after{
@@ -78,13 +78,18 @@
     background: crimson;
     transition: all 0.5s;
     margin: auto;
+    margin-top: 4px;
 }
 .nav li > a:hover::after{
-    width: 50%;
+    width: 100%;
 }
 
-.nav #color{
-    color: crimson;
+.nav li > a:active::after{
+    width: 100%;
+}
+
+body > nav > div > div > ul > li:nth-child(1) > a.active{
+    color: crimson; 
 }
 
                    /* HOME OF THE WEBSITE */
@@ -98,11 +103,9 @@
     background-size: cover;
     font-family: "Ubuntu" , sans-serif;
 }
+
 .home .container{
     width: 100%;
-    /* display: flex;
-    align-items: center;
-    justify-content: space-between; */
 }
 .home .container .home-content{
     color: white ;
@@ -125,8 +128,7 @@
 
 /* @keyframes added in text 3 for typing animation */
 
-@-webkit-keyframes typing { from { width: 0 ; } }
-@-webkit-keyframes blink-caret { 50% { border-color: transparent ;} }
+
 
 .animate{
     color: crimson ;
@@ -137,17 +139,21 @@
     /* margin: 2em 1em; */
     white-space: nowrap;
     overflow: hidden ;
-    -webkit-animation: typing 7s steps(13, end),
+ animation: typing 7s steps(14, end),
      blink-caret .5s step-end infinite alternate; 
      font-weight: 500;
      text-shadow: 1px 1px 4px rgb(0, 0, 0);
 }
 
+@keyframes typing {
+     from {
+         width: 0% ; }
+     to {width: 100%;}
+ }
+@keyframes blink-caret { 50% { border-color: transparent ;} }
                   /* button Styling */
-.btnn{
+.btn{
     font-size: 25px;
-    width: 50px ;
-    height: 25px ;
     text-decoration: none;
     color: crimson;
     border: 2px solid crimson;
@@ -155,12 +161,12 @@
     padding: 8px 10px;
     transition: all 0.5s ease;
 }
-.btnn:hover{
+.btn:hover{
     background: crimson;
     color: white;
     border: 2px solid crimson;
     border-radius: 5px;
-    transition: all 0.5s ease;
+  
 }
 
 /* illustation images styling */
@@ -168,4 +174,79 @@
     /* border: 5px solid red; */
     width: 600px;
     height: 500px;
+}
+
+             /* About me Section  */
+.about-me{
+    padding-block: 100px ;
+    font-family: "Ubuntu" , sans-serif;
+    background: url(images/white.jpg) no-repeat center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.about-me-content .title{
+    text-align: center ;
+    margin-bottom: 50px;
+}
+.about-me-content .title > h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.about-me-content .title > p{
+    font-weight: 500;
+    font-size: 20px;
+    color: crimson;
+}
+.about-me .container .about-me-content .about-me-content-div{
+    display: flex ;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+.about-me .container .about-me-content .about-me-content-div .about-me-img > img {
+    align-items: center;
+}
+.about-me .container .about-me-content .about-me-content-div .about-me-img > img {
+    width: 400px;
+    height: 400px;
+    border-radius: 8px;
+    box-shadow: 0 0 4px 4px rgb(0, 0, 0);
+}
+.about-me .container .about-me-content .about-me-content-div .about-me-details{
+    width: 50%;
+    padding: 20px 0;
+    align-items: center;
+    padding-left: 80px;
+
+}
+.about-me .container .about-me-content .about-me-content-div .about-me-details > h4{
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.about-me .container .about-me-content .about-me-content-div .about-me-details > span{
+    font-size: 30px;
+    text-shadow: 0 0 2px white;
+}
+.about-me .container .about-me-content .about-me-content-div .about-me-details > p{
+    margin-bottom: 28px;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    margin-top: 10px;
+}
+.about-me .container .about-me-content .about-me-content-div .about-me-details > a{
+    padding: 10px;
+    margin-top: 20px;
+    color: rgb(0, 0, 0) ;
+    background: crimson;
+    transition: all 0.5s ease;
+    box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+    cursor: pointer ;
+}
+.about-me .container .about-me-content .about-me-content-div .about-me-details > a:hover{
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 2px 2px rgb(255, 255, 255);
+
 }

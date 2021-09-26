@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="style.css">
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+
 </head>
 
 <body>
@@ -28,8 +31,8 @@
                 <ul class="nav">
                     <!-- li is list item -->
                     <!-- a is anchor tag -->
-                    <li><a href="#" class="nav-links" id="color">Home</a></li>
-                    <li><a href="#" class="nav-links">About</a></li>
+                    <li><a href="#" class="nav-links active">Home</a></li>
+                    <li><a href="#about" class="nav-links">About</a></li>
                     <li><a href="#" class="nav-links">Services</a></li>
                     <li><a href="#" class="nav-links">Skills</a></li>
                     <li><a href="#" class="nav-links">Project</a></li>
@@ -40,18 +43,37 @@
     </nav>
     <!-- Home of the Website -->
     <section class="home">
-       <div class="container">
-           <div class="home-content">
-               <div class="text-1">Hello, my name is</div>
-               <div class="text-2">Leo Diwas</div>
-               <div class="text-3">And I'am a <span class="animate">Web Developer</span></div>
-               <a href="#" class="btnn">Hire me</a>
-           </div>
-           <!-- <div class="illustrate-img">
-                <img src="images/illustrate.png" alt="image">
-           </div>
-       </div> 
-    </section> -->
+        <div class="container">
+            <div class="home-content">
+                <p class="text-1">Hello, my name is</p>
+                <h1 class="text-2">Leo Diwas</h1>
+                <p class="text-3">And I'am a <span class="animate">Web Developer</span></p>
+                <a href="#" class="btn">Hire me</a>
+            </div>
+    </section>
+
+    <!-- About me Section -->
+    <section class="about-me" id="about">
+        <div class="container">
+            <div class="about-me-content">
+                <div class="title">
+                    <h2>About me</h2>
+                    <p>who i am</p>
+                </div>
+                <div class="about-me-content-div">
+                    <div class="about-me-img">
+                        <img src="images/FAVICON.png" alt="Image of my">
+                    </div>
+                    <div class="about-me-details">
+                        <h4>I am Leo Diwas and I'm a </h4>
+                        <span class="animate">Web Developer</span>
+                        <p>About yourself</p>
+                        <a href="" class="btn">Download CV</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
 </body>
 
