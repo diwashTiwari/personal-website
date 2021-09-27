@@ -31,34 +31,22 @@
     width: 100%;
     padding: 15px 0;
     z-index: 999999 ;
-    /* background: rgb(0, 0, 0); */
     /* position: fixed ; */
     font-family: "Ubuntu" , sans-serif;
     transition: 0.6s;
     /* box-shadow: 0 1px 2px 2px crimson; */
-    background: #13191A;
+    background: linear-gradient( to right, #141819 69%, #13191A 31%);
+    /* background: #13191A; */
 }
 .navbar-content{
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-/* .logo a{
-    color: white;
-    text-decoration: none;
-    font-size: 50px;
-    font-weight: 600 ;
-}
-.logo a:hover{
-    transition: all 0.5s ease;
-    color: crimson;
-    text-shadow: 1px 1px 3px rgb(0, 0, 0);
-} */
 .logo > img {
     width: 70px;
     height: 60px;
 }
-
 .nav{
     display: flex;
 }
@@ -258,4 +246,122 @@ body > nav > div > div > ul > li:nth-child(1) > a.active{
     color: rgb(255, 255, 255);
     box-shadow: 0 0 2px 2px rgb(255, 255, 255);
 
+}
+
+                    /* Service Section Styling */
+.service{
+    /* width: 100%; */
+    background: #13191A ;
+    font-family: "Ubuntu", sans-serif;
+    color: white;
+    /* height: 70vh; */
+    padding-block: 100px ;
+
+}
+.service .container{
+    align-items: center;
+}
+.service-title{
+    text-align: center;
+    margin-bottom: 40px;
+}
+.service-title > h3{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 6px;
+    font-weight: 500 ;
+}
+.service-title > p {
+    font-size: 20px;
+    font-weight: 500;
+    color: crimson;
+}
+.service-contents{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+    width: 100%;
+}
+.service-contents .cards {
+    border-radius: 5px;
+    padding: 50px;
+    height: 200px;
+    width: 300px;
+    background: black;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    /* box-shadow: 0 0 4px 4px #ffffff; */
+}
+.service-contents .cards > i {
+    color: crimson;
+    max-width: 400px;
+    height: auto;
+    font-size: 48px;
+    margin-bottom: 16px;
+}
+.service-contents .cards > p {
+    font-size: 23px;
+    font-weight: 500;
+}
+/* hover part of service */
+.service-contents .cards:hover{
+    background: crimson ;
+    transform: scale(1.12);
+    /* box-shadow: 0 0 2px 2px black; */
+}
+.service-contents .cards:hover i{
+    color: white;
+}
+
+/* Skills section Styling */
+.skills-sec{
+    padding-block: 100px;
+    font-family: "Ubuntu", sans-serif ;
+    background: #ECECEC;
+    /* background: white; */
+}
+.skills-title{
+    text-align: center;
+    margin-bottom: 55px;
+}
+.skills-title > h4{
+    font-size: 40px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+.skills-title > p {
+    color: crimson;
+    font-size: 22px;
+    font-weight: 500;
+}
+.skills-content{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    line-height: 25px;
+}
+.skills-content .skills-content-left{
+    width: 50%;
+}
+.skills-content-left > .par-1 {
+    font-weight: 600;
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.skills-content-left > .par-2{
+    font-weight: 500;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+.skills-content-left > a{
+    background: crimson;
+    color: white;
+    transition: all 0.5s ease;
+}
+.skills-content-left > a:hover{
+    background: rgb(255, 255, 255);
+    color: crimson;
+    font-weight: 500;
 }
