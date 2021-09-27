@@ -21,6 +21,10 @@
     padding: 0 80px;
 }
 
+.img-responsive{
+    max-width: 100%;
+    height: auto;
+}
 
                                            /* NAVBAR Styling */
 .navbar{
@@ -28,10 +32,11 @@
     padding: 15px 0;
     z-index: 999999 ;
     /* background: rgb(0, 0, 0); */
-    position: fixed ;
+    /* position: fixed ; */
     font-family: "Ubuntu" , sans-serif;
     transition: 0.6s;
     /* box-shadow: 0 1px 2px 2px crimson; */
+    background: #13191A;
 }
 .navbar-content{
     display: flex;
@@ -207,22 +212,21 @@ body > nav > div > div > ul > li:nth-child(1) > a.active{
     display: flex ;
     align-items: center;
     flex-wrap: nowrap;
+    gap: 100px;
+    padding: 0 150px;
 }
-.about-me .container .about-me-content .about-me-content-div .about-me-img > img {
+.about-me-img {
     align-items: center;
+    width: 50%;
 }
-.about-me .container .about-me-content .about-me-content-div .about-me-img > img {
-    width: 400px;
-    height: 400px;
+.about-me-img > img {
     border-radius: 8px;
     box-shadow: 0 0 4px 4px rgb(0, 0, 0);
 }
-.about-me .container .about-me-content .about-me-content-div .about-me-details{
+.about-me-details{
     width: 50%;
     padding: 20px 0;
     align-items: center;
-    padding-left: 80px;
-
 }
 .about-me .container .about-me-content .about-me-content-div .about-me-details > h4{
     margin-bottom: 10px;
