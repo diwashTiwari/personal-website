@@ -14,13 +14,16 @@
     /* border: 1px solid red */
 }
 
-                           /* Container of all sections which acts as default for all class naming container */
+                          /* Default section of webpage */
+
+/* Container of all sections which acts as default for all class naming container */
 .container{
     max-width: 1300px;
     margin: auto;
     padding: 0 80px;
 }
 
+/* for responsive images */
 .img-responsive{
     max-width: 100%;
     height: auto;
@@ -65,8 +68,6 @@
 .nav li > a:hover{
     color: crimson;
     transition: all 0.5s;
-
-
 }
 .nav li > a::after{
     content: "";
@@ -81,11 +82,9 @@
 .nav li > a:hover::after{
     width: 100%;
 }
-
 .nav li > a:active::after{
     width: 100%;
 }
-
 body > nav > div > div > ul > li:nth-child(1) > a.active{
     color: crimson; 
 }
@@ -354,6 +353,7 @@ body > nav > div > div > ul > li:nth-child(1) > a.active{
     font-weight: 500;
     font-size: 18px;
     margin-bottom: 30px;
+    word-spacing: 6px;
 }
 .skills-content-left > a{
     background: crimson;
