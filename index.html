@@ -87,15 +87,15 @@
             </div>
             <!-- contents of service -->
             <div class="service-contents">
-                <div class="cards">
+                <div class="card">
                     <i class="fas fa-paint-brush" id="cards-i"></i>
                     <p>Web Design</p>
                 </div>
-                <div class="cards">
+                <div class="card">
                     <i class="fas fa-chart-line" id="cards-i"></i>
                     <p>Web Development</p>
                 </div>
-                <div class="cards">
+                <div class="card">
                     <i class="fas fa-code" id="cards-i"></i>
                     <p>App Development</p>
                 </div>
@@ -115,11 +115,34 @@
             <div class="skills-content">
                 <div class="skills-content-left">
                     <p class="par-1">My creative skills and experiences</p>
-                    <p class="par-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt reprehenderit unde fugiat magnam necessitatibus quo facilis dicta dolores, officiis accusamus, molestiae itaque modi earum suscipit mollitia impedit vitae odio laudantium minima! Eos at vitae rerum voluptatibus culpa veniam quos quas reprehenderit libero, et eum explicabo accusamus. Eius consequuntur expedita tenetur sit cupiditate inventore quibusdam unde!</p>
+                    <p class="par-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Incidunt reprehenderit
+                        unde fugiat magnam necessitatibus quo facilis dicta dolores, officiis accusamus, molestiae
+                        itaque modi earum suscipit mollitia impedit vitae odio laudantium minima! Eos at vitae rerum
+                        voluptatibus culpa veniam quos quas reprehenderit libero, et eum explicabo accusamus. Eius
+                        consequuntur expedita tenetur sit cupiditate inventore quibusdam unde!</p>
                     <a href="#" class="btn">Read More</a>
                 </div>
                 <div class="skills-content-right">
-
+                    <div class="info">
+                        <span>HTML</span>
+                        <span>90%</span>
+                    </div>
+                    <div class="info">
+                        <span>CSS</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="info">
+                        <span>javaScript</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="info">
+                        <span>Figma</span>
+                        <span>50%</span>
+                    </div>
+                    <div class="info">
+                        <span>Git</span>
+                        <span>70%</span>
+                    </div>
                 </div>
             </div>
         </div>
@@ -134,18 +157,31 @@
                 <p>What i have made</p>
             </div>
             <div class="projects-contents">
-                <div class="cards">
-                    <div class="circle"></div>
-                    <p>Project 1</p>
-                </div>
-                <div class="cards">
-                    <div class="circle"></div>
-                    <p>Project 2</p>
-                </div>
-                <div class="cards">
-                    <div class="circle"></div>
-                    <p>project 3</p>
-                </div>
+                <a href="#">
+                    <div class="card">
+                        <div class="rect">
+                            <img src="./images/boyy.jpg" alt="" class="img-responsive">
+                        </div>
+                        <p>Project 1</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="rect">
+                            <img src="./images/boyy.jpg" alt="" class="img-responsive">
+                        </div>
+                        <p>Project 2</p>
+                    </div>
+                </a>
+                <a href="#">
+                    <div class="card">
+                        <div class="rect">
+                            <img src="./images/boyy.jpg" alt="" class="img-responsive">
+                        </div>
+                        <p>Project 3</p>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
@@ -158,47 +194,59 @@
                 <h5>Contact Me</h5>
                 <p>get in touch</p>
             </div>
-            <div class="conatct-me-contents">
+            <div class="contact-me-contents">
                 <div class="left">
                     <div class="head-1">Get in Touch</div>
                     <!-- left side of contact -->
                     <div class="left-item-1">
                         <i class="fas fa-user"></i>
-                        <div>
+                        <div class="back">
                             <div class="word-1">Name</div>
                             <p class="word-2">your name</p>
                         </div>
                     </div>
                     <div class="left-item-1">
                         <i class="fas fa-map-marker-alt"></i>
-                        <div>
+                        <div class="back">
                             <div class="word-1">Address</div>
                             <p class="word-2">Biratnagar, Nepal</p>
                         </div>
                     </div>
                     <div class="left-item-1">
                         <i class="fas fa-envelope"></i>
-                        <div>
+                        <div class="back">
                             <div class="word-1">Email</div>
                             <p class="word-2">leodiwas@icloud.com</p>
                         </div>
                     </div>
                 </div>
-
                 <!-- right section of contact -->
                 <div class="right">
                     <div class="head-2">Message me</div>
-
+                    <form>
+                        <div class="input-field-1">
+                            <div class="name">
+                                <input type="text" required placeholder="Name" class="inputs">
+                            </div>
+                            <div class="email">
+                                <input type="email" required placeholder="Email" class="inputs">
+                            </div>
+                        </div>
+                        <div class="input-field-2">
+                            <input type="text" required placeholder="Subject" class="inputs">
+                        </div>
+                        <div class="input-field-3">
+                            <textarea name="" id="" cols="30" rows="10" placeholder="Message..."></textarea>
+                        </div>
+                        <a href="" class="btn">Send Message</a>
+                    </form>
                 </div>
             </div>
-        </div>
     </section>
-    
-    <!-- copyright section  -->
-    <a href="#home"></a>
-    <div class="copyright-sec">&#169 2020 All Rights Reserved</div>
-    <a href="#home"></a>
 
+    <!-- copyright div  -->
+    <a href="#home"></a>
+    <div class="copyright-dev">&#169 2020 All Rights Reserved</div>
 
 </body>
 
