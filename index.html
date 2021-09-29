@@ -19,7 +19,7 @@
 
 <body>
     <!-- Navigation Bar of the Website -->
-    <nav class="navbar">
+    <nav class="navbar" id="home">
         <div class="container">
             <div class="navbar-content">
                 <div class="logo">
@@ -32,7 +32,7 @@
                 <ul class="nav">
                     <!-- li is list item -->
                     <!-- a is anchor tag -->
-                    <li><a href="#" class="nav-links active">Home</a></li>
+                    <li><a href="#home" class="nav-links active">Home</a></li>
                     <li><a href="#about" class="nav-links">About</a></li>
                     <li><a href="#service" class="nav-links">Services</a></li>
                     <li><a href="#skills" class="nav-links">Skills</a></li>
@@ -123,25 +123,40 @@
                     <a href="#" class="btn">Read More</a>
                 </div>
                 <div class="skills-content-right">
-                    <div class="info">
-                        <span>HTML</span>
-                        <span>90%</span>
+                    <div class="bar">
+                        <div class="info">
+                            <span>HTML</span>
+                            <span>90%</span>
+                        </div>
+                        <div class="line html"></div>
                     </div>
-                    <div class="info">
-                        <span>CSS</span>
-                        <span>60%</span>
+                    <div class="bar">
+                        <div class="info">
+                            <span>CSS</span>
+                            <span>60%</span>
+                        </div>
+                        <div class="line css"></div>
                     </div>
-                    <div class="info">
-                        <span>javaScript</span>
-                        <span>80%</span>
+                    <div class="bar">
+                        <div class="info">
+                            <span>JavaScript</span>
+                            <span>80%</span>
+                        </div>
+                        <div class="line js"></div>
                     </div>
-                    <div class="info">
-                        <span>Figma</span>
-                        <span>50%</span>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Figma</span>
+                            <span>50%</span>
+                        </div>
+                        <div class="line figma"></div>
                     </div>
-                    <div class="info">
-                        <span>Git</span>
-                        <span>70%</span>
+                    <div class="bar">
+                        <div class="info">
+                            <span>Git</span>
+                            <span>70%</span>
+                        </div>
+                        <div class="line git"></div>
                     </div>
                 </div>
             </div>
@@ -246,7 +261,9 @@
     </section>
 
     <!-- copyright div  -->
-    <a href="#home"></a>
+    <a href="#home" class="scroll-btn">
+        <img src="images/up-arrow.svg" alt="" class="scroll" >
+    </a>
     <div class="copyright-dev">&#169 2020 All Rights Reserved</div>
 
 </body>

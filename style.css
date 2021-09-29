@@ -383,9 +383,44 @@ body > nav > div > div > ul > li:nth-child(1) > a.active{
     font-size: 20px;
     font-weight: 500;
 }
+.bar{
+    margin-bottom: 15px;
+}
 .info{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 10px;
+    align-items: center;
+}
+.skills-content-right .bar .line{
+    width: 100%;
+    background: white;
+    position: relative;
+    height: 5px ;
+}
+.skills-content-right .bar .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: crimson;
+    margin-bottom: 8px;
+}
+.skills-content-right .bar .html::before{
+    width: 90%;
+}
+.skills-content-right .bar .css::before{
+    width: 60%;
+}
+.skills-content-right .bar .js::before{
+    width: 80%;
+}
+.skills-content-right .bar .figma::before{
+    width: 50%;
+}
+.skills-content-right .bar .git::before{
+    width: 70%;
 }
 
 
@@ -626,4 +661,30 @@ form > .btn:hover{
     padding-block: 6px;
     color: white;
     font-weight: 400;
+}
+
+.scroll-btn{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    cursor: pointer;
+    margin-right: 10px;
+    background: #ECECEC;
+    position: relative;
+}
+.scroll-btn .scroll{
+    width: 40px;
+    height: 40px;
+    background-color: crimson;
+    padding: 8px;
+    border-radius: 6px;
+    position: relative;
+    top: 20px;
+    transition: all 0.5s ease;
+
+}
+.scroll-btn .scroll:hover{
+    background: #ECECEC;
+    /* border: 2px solid crimson; */
+    box-shadow: 0 0 4px 4px crimson;
 }
