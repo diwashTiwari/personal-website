@@ -115,6 +115,7 @@ body > nav > div > div > ul > li:nth-child(1) > a.active{
 }
 .home .container .home-content{
     color: white ;
+    margin-bottom: 200px;
 }
 .home .container .home-content > .text-1{
     font-size: 35px;
@@ -538,6 +539,7 @@ body > nav > div > div > ul > li:nth-child(1) > a.active{
     font-weight: 500;
     margin-bottom: 4px;
 }
+
 .left-item-1 > i{
     align-items: center;
 }
