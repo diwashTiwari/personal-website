@@ -19,7 +19,7 @@
 /* Container of all sections which acts as default for all class naming container */
 .container{
     max-width: 1300px;
-    margin: auto;
+    margin: 0 auto;
     padding: 0 80px;
 }
 
@@ -39,12 +39,12 @@
 }
 
 .lines{
-    width: 100%;
+    /* width: 100%; */
     position: relative;
 }
 
 /* Aboutme skills contact me */
-.lines::before{
+/* .lines::before{
     position: absolute;
     width: 100px;
     background: crimson;
@@ -61,7 +61,7 @@
     content: "";
     right: 35%;
     bottom: 37%;
-}
+} */
 
 /* services and projects */
 .row{
@@ -109,25 +109,25 @@
     width: 70px;
     height: 60px;
 }
-.nav{
+.nav-menu{
     display: flex;
 }
-.nav li {
+.nav-menu li {
     list-style-type: none;
     margin: 0 15px;
 }
-.nav li > a{
+.nav-menu li > a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
 }
-.nav li > a:hover{
+.nav-menu li > a:hover{
     color: crimson;
     transition: all 0.5s;
 }
-.nav li > a::after{
+.nav-menu li > a::after{
     content: "";
     width: 0% ;
     display: block;
@@ -137,10 +137,10 @@
     margin: auto;
     margin-top: 4px;
 }
-.nav li > a:hover::after{
+.nav-menu li > a:hover::after{
     width: 100%;
 }
-.nav li > a:active::after{
+.nav-menu li > a:active::after{
     width: 100%;
 }
 body > nav > div > div > ul > li:nth-child(1) > a.active{
@@ -151,7 +151,7 @@ body > nav > div > div > ul > li:nth-child(1) > a.active{
 .home{
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 100vh; 
     min-height: 600px;
     background: url(images/tryy.jpg) no-repeat center;
     background-attachment: fixed;
@@ -235,7 +235,7 @@ body > nav > div > div > ul > li:nth-child(1) > a.active{
 .about-me{
     padding-block: 100px ;
     font-family: "Ubuntu" , sans-serif;
-    background: url(images/white.jpg) no-repeat center;
+    background: url(images/white.jpg) no-repeat center center / cover;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -567,6 +567,13 @@ body > nav > div > div > ul > li:nth-child(1) > a.active{
     font-weight: 600;
     margin-bottom: 20px;
 }
+
+.word-1{
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 4px;
+}
+
 .left-item-1{
     display: flex;
     font-weight: 400;
@@ -577,18 +584,16 @@ body > nav > div > div > ul > li:nth-child(1) > a.active{
 }
 .left-item-1 > i{
     color: crimson ;
-    font-size: 28px;
+    font-size: 30px;
     align-items: center;
-}
-.word-1{
-    font-size: 18px;
-    font-weight: 500;
-    margin-bottom: 4px;
 }
 
 .left-item-1 > i{
     align-items: center;
 }
+
+
+
             /* right */
 .right{
     width: 50%;
@@ -656,16 +661,11 @@ form > .btn:hover{
 }
 
 
-
-
-
-
-
-
-
-
-
 /* .copyright-dev styling */
+
+.footer > .footer-container{
+    max-width: 1800px;
+}
 .copyright-dev{
     background: #13191A ;
     font-family: "Ubuntu", sans-serif ;
@@ -697,6 +697,283 @@ form > .btn:hover{
 }
 .scroll-btn .scroll:hover{
     background: #ECECEC;
-    /* border: 2px solid crimson; */
     box-shadow: 0 0 4px 4px crimson;
+}
+
+
+
+/* nav-toggler css start */
+.nav-toggler {
+    border:none;
+    padding: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    display: none;
+  }
+  .nav-toggler span, 
+  .nav-toggler span:before, 
+  .nav-toggler span:after {
+    width: 28px;
+    height: 3px;
+    background-color: white;
+    display: block;
+    transition: .3s;
+  }
+  .nav-toggler span:before {
+    content: '';
+    transform: translateY(-9px);
+  }
+  .nav-toggler span:after {
+    content: '';
+    transform: translateY(6px);
+  }
+  .nav-toggler.toggler-open span {
+    background-color: transparent;
+  }
+  .nav-toggler.toggler-open span:before {
+    transform: translateY(0px) rotate(45deg);
+  }
+  .nav-toggler.toggler-open span:after {
+    transform: translateY(-3px) rotate(-45deg);
+  }
+  /* nav-toggler css ends */
+
+
+
+/* ............................Media Queries Styling............................. */
+
+/* media queries for ipad and tablet */
+
+@media screen and (max-width: 768px){
+
+    .container{
+        max-width: 720px;
+        padding: 0;
+    }
+    .nav-menu{
+        display: none;
+    }
+    .navbar{
+        background: ;
+    }
+    .nav-toggler{
+        display: block;
+    }
+    .navbar-content {
+        min-height: 60px;
+        padding: 0 20px;
+        margin-top: 0px;
+    }
+    .navbar-content ul {
+        z-index: 9999;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 60px);
+        left: 0;
+        top: 60px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-dark);
+        background: url(images/corridor.jpg);
+        background-size: cover;
+        background-position: center;
+        max-height: 0;
+        overflow: hidden;
+        transition: .3s;
+    }
+    .navbar-content ul li {
+        width: 100%;
+        text-align: center;
+    }
+    .navbar-content ul li a {
+        padding: 25px;
+        color: #fff;
+        font-size: 28px;
+    }
+    .navbar-content ul li a:hover {
+        background-color: rgba(255,255,255,.1);
+        box-sizing: 0 0 2px 2px var(--color-primary);
+    }
+    .navbar-content ul.open {
+        max-height: 100vh;
+        overflow: visible;
+    }
+    .home .container .home-content > .text-1{
+        font-size: 50px;
+    }
+    .home .container .home-content > .text-2{
+        font-size: 100px;
+    }
+    
+    .home .container .home-content > .text-3 {
+        font-size: 50px;
+    }
+    .btn{
+        padding: 16px 32px;
+        background: crimson;
+        color: #fff;
+    }
+    .about-me .container .about-me-content .about-me-content-div{
+        padding: 0;
+        gap: 50px;
+    }
+    .service-contents{
+        padding: 0;
+    }
+    .service-contents .card{
+        padding: 40px;
+    }
+    .skills-content{
+        flex-direction: column;
+    }
+    .skills-content .skills-content-left{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .skills-content-left > .par-2{
+        margin-bottom: 40px;
+    }
+    .skills-content-right{
+        width: 100%;
+    }
+    .input-field-3{
+        margin-bottom: px;
+    }
+    .contact-me{
+        padding-block: 50px;
+    }
+    .contact-me-contents{
+        flex-direction: column;
+    }
+    .name{
+        width: 100%;
+    }
+    .email{
+        width: 100%;
+    }
+    .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-item-1{
+        width: 50%;
+    }
+    .right{
+        width: 100%;
+        text-align: center;
+    }
+
+}
+
+/* media queries for mobile */
+
+@media screen and (max-width: 480px){
+    
+    .container{
+        max-width: 380px;
+        padding: 0;
+    }
+    .navbar-content{
+        align-items: center;
+    }
+    .home{
+        background-attachment: local;
+        min-height: 500px;
+        display: block;
+        padding-block: 60px ;
+    }
+    .home .container .home-content{
+        margin-bottom: 0;
+        padding-block: 60px;
+    }
+    .home .container .home-content > .text-1{
+        font-size: 35px;
+    }
+    .home .container .home-content > .text-2{
+        font-size: 80px;
+    }
+    .home .container .home-content > .text-3 {
+        font-size: 40px;
+    }
+    .btn{
+        padding: 8px 10px;
+    }
+    .about-me{
+        padding-block: 50px;
+    }
+    .about-me .container .about-me-content .about-me-content-div{
+        flex-wrap: wrap;
+        gap: 50px ;
+        padding: 0;
+        align-items: center;
+        justify-content: center;
+    }
+    .about-me-img{
+        width: 100%;
+    }
+    .about-me-details{
+        width: 100%;
+        text-align: center;
+    }
+    .service{
+        padding-block: 50px;
+    }
+    .service-contents{
+        flex-direction: column;
+    }
+    .card{
+        width: 100%;
+    }
+    .skills-sec{
+        padding-block: 50px;
+    }
+    .skills-title{
+        margin-bottom: 25px;
+    }
+    .skills-content{
+        flex-direction: column;
+    }
+    .skills-content .skills-content-left{
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .skills-content-right{
+        width: 100%;
+    }
+    .projects-contents{
+        flex-direction: column;
+    }
+    .contact-me{
+        padding-block: 50px;
+    }
+    .contact-me-contents{
+        flex-direction: column;
+    }
+    .left{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .left-item-1{
+        width: 50%;
+    }
+    .right{
+        width: 100%;
+        text-align: center;
+    }
+    .projects-sec{
+        padding-block: 50px;
+    }
+    .input-field-1{
+        flex-direction: column;
+    }
+    .contact-me-title{
+        margin-bottom: 25px;
+    }
 }

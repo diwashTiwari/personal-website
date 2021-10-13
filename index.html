@@ -24,12 +24,9 @@
             <div class="navbar-content">
                 <div class="logo">
                     <img src="images/FAV1.png" alt="">
-                    <!-- <a href="#" class="logo-link">
-                        <img src="images/FAV1.png" alt="">
-                    </a> -->
                 </div>
                 <!-- unorder list -->
-                <ul class="nav">
+                <ul class="nav-menu">
                     <!-- li is list item -->
                     <!-- a is anchor tag -->
                     <li><a href="#home" class="nav-links active">Home</a></li>
@@ -39,6 +36,10 @@
                     <li><a href="#projects" class="nav-links">Project</a></li>
                     <li><a href="#contact" class="nav-links">Contact</a></li>
                 </ul>
+                <!-- nav-toggler -->
+                <div class="nav-toggler">
+                    <span></span>
+                </div>
             </div>
         </div>
     </nav>
@@ -49,7 +50,9 @@
                 <p class="text-1">Hello, my name is</p>
                 <h1 class="text-2">Diwas Tiwari</h1>
                 <p class="text-3">And I'am a <span class="animate">Web Developer</span></p>
-                <a href="#" class="btn">Hire me</a>
+                <div class="btn-container">
+                    <a href="#" class="btn">Hire me</a>
+                </div>
             </div>
     </section>
 
@@ -83,7 +86,7 @@
             <!-- title of service -->
             <div class="service-title">
                 <h3>My Services</h3>
-                <p class="row ">What i provide</p>
+                <p class="lines ">What i provide</p>
             </div>
             <!-- contents of service -->
             <div class="service-contents">
@@ -169,7 +172,7 @@
             <!-- title of project -->
             <div class="projects-title">
                 <h3>My Projects</h3>
-                <p class="row">What i have made</p>
+                <p class="lines">What i have made</p>
             </div>
             <div class="projects-contents">
                 <a href="#">
@@ -210,9 +213,8 @@
                 <p class="lines">get in touch</p>
             </div>
             <div class="contact-me-contents">
-                <div class="left">
+                <div class="left contact-me-left">
                     <div class="head-1">Get in Touch</div>
-                    <!-- left side of contact -->
                     <div class="left-item-1">
                         <i class="fas fa-user"></i>
                         <div class="back">
@@ -261,15 +263,20 @@
     </section>
 
     <!-- copyright div  -->
-    <a href="#home" class="scroll-btn">
-        <img src="images/up-arrow.svg" alt="" class="scroll" >
-    </a>
-    <div class="copyright-dev">&#169 2020 All Rights Reserved</div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-contents">
+                <a href="#home" class="scroll-btn">
+                    <img src="images/up-arrow.svg" alt="" class="scroll">
+                </a>
+                <div class="copyright-dev">&#169 2020 All Rights Reserved</div>
+            </div>
+        </div>
+    </footer>
 
 </body>
 
 <script src="script.js"></script>
-
 
 </html>
 
