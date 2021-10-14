@@ -750,11 +750,11 @@ form > .btn:hover{
         max-width: 720px;
         padding: 0;
     }
-    .nav-menu{
-        display: none;
+    .nav-bar{
+        background: #141819 ;
     }
-    .navbar{
-        background: ;
+    .nav-menu{
+        display: block;
     }
     .nav-toggler{
         display: block;
@@ -764,38 +764,34 @@ form > .btn:hover{
         padding: 0 20px;
         margin-top: 0px;
     }
-    .navbar-content ul {
+    .navbar-content .nav-menu {
         z-index: 9999;
         position: absolute;
         width: 100%;
         height: calc(100vh - 60px);
         left: 0;
-        top: 60px;
+        top: 94px;
+        display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        background-color: var(--color-dark);
-        background: url(images/corridor.jpg);
+        background: #141819 ;
         background-size: cover;
         background-position: center;
         max-height: 0;
         overflow: hidden;
         transition: .3s;
     }
-    .navbar-content ul li {
+    .navbar-content .nav-menu li {
         width: 100%;
         text-align: center;
     }
-    .navbar-content ul li a {
+    .navbar-content .nav-menu li a {
         padding: 25px;
         color: #fff;
         font-size: 28px;
     }
-    .navbar-content ul li a:hover {
-        background-color: rgba(255,255,255,.1);
-        box-sizing: 0 0 2px 2px var(--color-primary);
-    }
-    .navbar-content ul.open {
+    .navbar-content .nav-menu.open {
         max-height: 100vh;
         overflow: visible;
     }
@@ -810,7 +806,7 @@ form > .btn:hover{
         font-size: 50px;
     }
     .btn{
-        padding: 16px 32px;
+        padding: 14px 30px;
         background: crimson;
         color: #fff;
     }
@@ -844,9 +840,7 @@ form > .btn:hover{
     .contact-me{
         padding-block: 50px;
     }
-    .contact-me-contents{
-        flex-direction: column;
-    }
+
     .name{
         width: 100%;
     }
@@ -854,17 +848,14 @@ form > .btn:hover{
         width: 100%;
     }
     .left{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .left-item-1{
-        width: 50%;
+        width: 40%;
     }
     .right{
-        width: 100%;
+        width: 60%;
         text-align: center;
+    }
+    .back{
+        padding: 0 20px;
     }
 
 }
@@ -888,16 +879,18 @@ form > .btn:hover{
     }
     .home .container .home-content{
         margin-bottom: 0;
-        padding-block: 60px;
+        padding-block: 100px;
     }
     .home .container .home-content > .text-1{
-        font-size: 35px;
+        font-size: 28px;
     }
     .home .container .home-content > .text-2{
-        font-size: 80px;
+        font-size: 55px;
+        line-height: 60px;
     }
     .home .container .home-content > .text-3 {
-        font-size: 40px;
+        font-size: 34px;
+        line-height: 50px;
     }
     .btn{
         padding: 8px 10px;
@@ -955,10 +948,8 @@ form > .btn:hover{
         flex-direction: column;
     }
     .left{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        width: 40%;
+
     }
     .left-item-1{
         width: 50%;
