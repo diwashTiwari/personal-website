@@ -1,0 +1,183 @@
+.hero {
+  margin: 6rem 0 10rem 0;
+  .container {
+    .row {
+      .col:nth-child(1) {
+        padding: 10rem 0;
+        @include respond(tablet) {
+          padding: 5rem 0;
+        }
+        @include respond(mobile) {
+          padding: 0;
+          text-align: center;
+        }
+        h1 {
+          span {
+            display: block;
+          }
+        }
+        p {
+          max-width: 43ch;
+          margin-bottom: 4rem;
+        }
+        button {
+        }
+      }
+      .col:nth-child(2) {
+        z-index: 1019;
+        position: relative;
+        text-align: end;
+        @include respond(tablet) {
+          text-align: center;
+        }
+        img {
+        }
+        .get-in-touch-card {
+          position: absolute;
+          top: 25.5rem;
+          left: 0rem;
+          z-index: 1;
+          @include respond(tablet) {
+            left: 23rem;
+
+            top: 5.5rem;
+          }
+          @include respond(mobile) {
+            left: 19%;
+            bottom: -5rem;
+            top: unset;
+          }
+          @include respond(mobile-sm) {
+            left: 15%;
+          }
+          @include respond(mobile-xs) {
+            left: 7%;
+          }
+        }
+
+        .blur {
+          position: absolute;
+          bottom: 0;
+          left: 14rem;
+          @include respond(laptop) {
+            left: 4rem;
+          }
+          @include respond(tablet-l) {
+            left: -5rem;
+          }
+          @include respond(tablet) {
+            left: 7rem;
+          }
+          @include respond(mobile) {
+            bottom: 0;
+            left: -5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+.services {
+  margin: 10rem 0;
+  .container {
+    .row:first-child {
+      margin-bottom: 8rem;
+      p {
+        max-width: 55ch;
+      }
+    }
+    .row:nth-child(2) {
+      .col {
+        margin-bottom: 6.8rem;
+      }
+    }
+  }
+  position: relative;
+  .bg-rect-2 {
+    width: 291px;
+    height: 475px;
+    background: #c2ebf0;
+    opacity: 0.5;
+    position: absolute;
+      left: 0;
+      top: 9.5rem;
+      z-index: -1;
+  @include respond(tablet){
+    display: none;
+  }
+  }
+ 
+}
+
+.work {
+  .container {
+    .row {
+      p {
+        margin-bottom: 4.8rem;
+      }
+      .card-wrapper{
+        justify-content: center;
+        margin-bottom: 12.5rem;
+        @include respond(mobile){
+          margin-bottom: 4.5rem;
+        }
+      }
+      .col:nth-child(1){
+        @include respond(mobile){
+          text-align: center;
+        }
+      }
+      .col:nth-child(2){
+        margin-top: 5rem;
+        @include respond(mobile){
+          text-align: center;
+        }
+      }
+
+    }
+  }
+
+  position: relative;
+  .bg-rect-3 {
+    width: 291px;
+    height: 475px;
+    background: #c2ebf0;
+    opacity: 0.5;
+    position: absolute;
+      right : 0;
+      top: 39rem;
+      z-index: -1;
+  @include respond(tablet){
+    display: none;
+  }
+  }
+}
+
+.testimonials {
+  margin: 10rem 0 0 0;
+  background: linear-gradient(
+    180deg,
+    rgba(194, 235, 240, 0) 0%,
+    rgba(194, 235, 240, 0.5) 100%
+  );
+
+  h2 {
+    max-width: 22ch;
+  }
+  .container{
+    position: relative;
+    .blur{
+      position: absolute;
+      left: -5rem;
+      bottom: 0;
+    }
+  }
+ 
+}
+
+.row-form{
+  .btn{
+    z-index: 1;
+  }
+}

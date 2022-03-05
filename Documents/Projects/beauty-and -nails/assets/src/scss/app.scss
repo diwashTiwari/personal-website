@@ -1,0 +1,47 @@
+
+//import bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands";
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+// @import "../../../node_modules/@fortawesome/fontawesome-free/scss/v4-shims";
+
+// font
+@import "fonts/general-sans.scss";
+
+@import "abstracts/functions";
+@import "abstracts/mixins";
+@import "abstracts/variables";
+
+@import "base/animations";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+@import "components/button";
+@import "components/card";
+@import "components/form";
+@import "components/testimonials";
+@import "components/images-grid";
+@import "components/breadcrumb";
+
+
+@import "layout/nav";
+@import "layout/hero";
+@import "layout/footer";
+@import "layout/header";
+@import "layout/section" ;
+@import "layout/cta";
+@import "layout/about" ;
+@import "layout/discription" ;
+@import "layout/copyright" ;
+@import "layout/workflowcard" ;
+@import "layout/joinus" ;
+
+@import "pages/index";
+
+
+@import './modules/splide.scss';
+@import '../../../node_modules/aos/src/sass/aos.scss';

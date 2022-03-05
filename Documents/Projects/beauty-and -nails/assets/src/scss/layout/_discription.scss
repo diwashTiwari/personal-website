@@ -1,0 +1,84 @@
+.discription{
+    padding-block: 6.8rem ;
+    .container{
+        .discription-client-contents{
+            margin-bottom: 6.6rem;
+            .discription_title-box{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 8rem;
+            }
+            .client-info{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                text-align: center;
+                .client-img-box{
+                    width: 14%;
+                    margin-bottom: 3.2rem;;
+                    img{
+                        border-radius: 50%;
+                    }
+                }
+                .para{
+                    max-width: 46ch;
+                }
+            }
+        }
+        .discription-blog-news-contents{
+            justify-content: center;
+            margin-bottom: 8rem;
+            .col-12{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                text-align: center;
+                margin-bottom: 7.2rem;
+            }
+            .col-4{
+                width: 38rem;
+                padding: .8rem;
+                .service-img-box{
+                    margin-bottom: 1.5rem;
+                }
+                .caption{
+                    margin-bottom: .8rem ;
+                }
+                h5{
+                    margin-bottom: 1.6rem;
+                    max-width: 26ch;
+                }
+                .para{
+                    margin-bottom: 2.4rem;
+                    max-width: 37ch;
+                }
+                a{
+                    .btn-text{
+                        font-weight: 400;
+                        position: relative;
+                        display: inline-block;
+                        &::after{
+                            position: absolute;
+                            width: 100%;
+                            height: .2rem;
+                            bottom: 0;
+                            left: 0;
+                            background: var(--color-primary);
+                            content: " ";
+                        }
+                    }
+                }
+            }
+        }
+        .discription-blog-contents{
+            margin-bottom: 4rem;
+        }
+        .primary-btn{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    }
+}
