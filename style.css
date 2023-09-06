@@ -14,6 +14,10 @@
     /* border: 1px solid red */
 }
 
+html{
+    scroll-behavior: smooth !important;
+}
+
                           /* Default section of webpage */
 
 /* Container of all sections which acts as default for all class naming container */
